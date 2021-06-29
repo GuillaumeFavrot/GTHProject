@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Guillaume FAVROT">
+        <meta name="Description" content="Coding projects release and testing platform">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GTHProject</title>
+        <link rel="shortcut icon" href="/public/assets/img/viking_PNG44.png">
+        <link rel="stylesheet" href="/public/assets/Style.css">
+        <script src="/public/assets/scripts/SnakeMain.js" defer></script>
+    </head>
+    <body>
+        <!--Contient tout le site-->
+        <div class="containerpage">
+
+            <!--Contient le menu et la page principale-->
+            <div class="containersite">
+
+                <!--Contient le menu-->
+                <div class="containermenu">
+                    <div class="containerlogo">
+                        <img src="/public/assets/img/viking_PNG44.png">
+                    </div>
+                    <div class="menu">
+                        <b class="linkmenu"><a class="home" href="/">Home</a></b>
+                        <b class="linkmenu"><a class="page" href="TempConv">Temperature converter</a></b>
+                        <b class="linkmenu"><a class="page" href="Calculator">Calculator</a></b>
+                        <b class="linkmenu"><a class="page" href="Snake">Snake game</a></b>
+                        <b class="linkmenu"><a class="page" href="Pong">Pong game</a></b>
+                    </div>
+                </div>
+            
+                <!--Contient la page principale-->     
+                <div class="containermain">
+                    <!--Contient le header-->
+                    <div class="containerheader">
+                        <h1 id="top">GTH Project</h1>
+                        <p class="separator"><b>----------------------------------</b></p>
+                        <!--Ne pas confondre la balise Strong et la balise b. b met en gras et strong signale un élément important. Le rendu est le même mais les utilités sont différentes-->
+                        <p class="subtitle"><b>Welcome on GTHProject!</b></p>
+                        <p><b>This blog has been created as a release and testing environment for my various projects created during my coding learning journey.</b></p>
+                        <p class="separator last"><b>----------------------------------</b></p>
+                    </div>
+
+                    <!--Contient la partie article-->
+                    <div class="containerarticle">
+                        <h2>Snake's Adventures!</h2>
+                        <p class="tempconvpres"><b>Get snakin'!</b></p><br>
+                        <div id = "containerSnake">
+                            <div id ="containerGame">
+                                <div id = "settingsMenu">
+                                    <p id = "selectDifficulty"><b>Select your difficulty: </b></p>
+                                    <select id="difficulty">
+                                        <option value="easy">Easy </option>
+                                        <option value="medium">Medium: 2x Points</option>
+                                        <option value="hard">Hard: 3x Points</option>
+                                        <option value="kingSnake">King snake: 5x Points</option>
+                                    </select>
+                                    <p class="level" id ="currentLevel">level 1</p>
+                                </div>
+                                <div class ="containerCanvasSnake" id = "cCanvas">
+                                    <div class="canvasSnake">
+                                        <canvas id="snakeCanvas">The canvas feature is not supported by your browser.</canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id = "containerHiscore">
+                                <h3 id = "hiscoreHeading">Highscore</h3>
+                                <ol class ="hiscore" id ="hiscorelist"> 
+                                
+                                </ol>
+                            
+                            </div>
+                        </div><br> 
+                    </div> 
+                    <!--Contient le footer-->
+                    <div class="containerfooter">    
+                        <p class="separator"><b>----------------------------------</b></p>
+                        <p><b><u>Contact information :</u></b></p><br>
+                        <p><b>If you need to contact me using feel free to use the link below :</b></p>
+                        <address>
+                            <a href="mailto:willy2.favrot@gmail.com"><b>Click here</b></a>
+                        </address>
+                        <p class="separator"><b>----------------------------------</b></p>
+                        <a href="#top"><i><b>Back to the top</b></i></a>            
+                        <p class="separator"><b>----------------------------------</b></p>
+                        <date class="date" datetime="2021-05-10"><b>Last updated on May 10, 2021</b></date>
+                        <p class="separator last"><b>----------------------------------</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

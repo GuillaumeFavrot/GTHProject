@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Guillaume FAVROT">
+        <meta name="Description" content="Coding projects release and testing platform">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GTHProject</title>
+        <link rel="shortcut icon" href="/public/assets/img/viking_PNG44.png">
+        <link rel="stylesheet" href="/public/assets/Style.css">
+        <script src="/public/assets/scripts/Calculator.js" defer></script>
+        
+    </head>
+    <body>
+        <!--Contient tout le site-->
+        <div class="containerpage">
+
+            <!--Contient le menu et la page principale-->
+            <div class="containersite">
+
+                <!--Contient le menu-->
+                <div class="containermenu">
+                    <div class="containerlogo">
+                        <img src="/public/assets/img/viking_PNG44.png">
+                    </div>
+                    <div class="menu">
+                        <b class="linkmenu"><a class="home" href="/">Home</a></b>
+                        <b class="linkmenu"><a class="page" href="TempConv">Temperature converter</a></b>
+                        <b class="linkmenu"><a class="page" href="Calculator">Calculator</a></b>
+                        <b class="linkmenu"><a class="page" href="Snake">Snake game</a></b>
+                        <b class="linkmenu"><a class="page" href="Pong">Pong game</a></b>
+                    </div>
+                </div>
+            
+                <!--Contient la page principale-->     
+                <div class="containermain">
+                    <!--Contient le header-->
+                    <div class="containerheader">
+                        <h1 id="top">GTH Project</h1>
+                        <p class="separator"><b>----------------------------------</b></p>
+                        <!--Ne pas confondre la balise Strong et la balise b. b met en gras et strong signale un élément important. Le rendu est le même mais les utilités sont différentes-->
+                        <p class="subtitle"><b>Welcome on GTHProject!</b></p>
+                        <p><b>This blog has been created as a release and testing environment for my various projects created during my coding learning journey.</b></p>
+                        <p class="separator last"><b>----------------------------------</b></p>
+                    </div>
+
+                    <!--Contient la partie article-->
+                    <div class="containerarticle">
+                            <h2>Calculator</h2>
+                            <p class="tempconvpres"><b>A basic calculator!</b></p><br>
+                                <div class="fieldsCalc">
+                                    
+                                    <div class="result"> 
+                                        <div class="previous"></div>
+                                        <div class="operator"></div>
+                                        <div class="current"></div>
+                                    </div>
+
+                                    <div class="grid-containerCalc">
+                                    <!--Ligne 1-->
+                                    <!--<button class="calcButton leftRow punctuation" id="par1">(</button>
+                                    <button class="calcButton middleRow1 punctuation" id="par2">)</button>-->
+                                    <button class="calcButton leftRow" id="ce">CE</button>
+                                    <button class="calcButton middleRow2 punctuation" id="point">.</button>
+                                    <button class="calcButton rightRow operation" id="divide">/</button>
+                                    <!--Ligne 2-->
+                                    <button class="calcButton leftRow number" id="seven">7</button>
+                                    <button class="calcButton middleRow1 number" id="eight">8</button>
+                                    <button class="calcButton middleRow2 number" id="nine">9</button>
+                                    <button class="calcButton rightRow operation" id="multiply">x</button>
+                                    <!--Ligne 3-->
+                                    <button class="calcButton leftRow number" id="four">4</button>
+                                    <button class="calcButton middleRow1 number" id="five">5</button>
+                                    <button class="calcButton middleRow2 number" id="six">6</button>
+                                    <button class="calcButton rightRow operation" id="minus">-</button>
+                                    <!--Ligne 4-->
+                                    <button class="calcButton leftRow number" id="one">1</button>
+                                    <button class="calcButton middleRow1 number" id="two">2</button>
+                                    <button class="calcButton middleRow2 number" id="three">3</button>
+                                    <button class="calcButton rightRow operation" id="plus">+</button>
+                                    <!--Ligne 5-->
+                                    
+                                    <button class="calcButton middleRow2" id="suppr">Suppr</button>
+                                    <button class="calcButton middleRow1 number" id="zero">0</button>
+                                    <button class="calcButton rightRow" id="equal">=</button>
+                                    </div>
+                                    
+                                </div>
+                    </div>
+                    
+
+                    <!--Contient le footer-->
+                    <div class="containerfooter">    
+                        <p class="separator"><b>----------------------------------</b></p>
+                        <p><b><u>Contact information :</u></b></p><br>
+                        <p><b>If you need to contact me using feel free to use the link below :</b></p>
+                        <address>
+                            <a href="mailto:willy2.favrot@gmail.com"><b>Click here</b></a>
+                        </address>
+                        <p class="separator"><b>----------------------------------</b></p>
+                        <a href="#top"><i><b>Back to the top</b></i></a>            
+                        <p class="separator"><b>----------------------------------</b></p>
+                        <date class="date" datetime="2021-05-10"><b>Last updated on May 10, 2021</b></date>
+                        <p class="separator last"><b>----------------------------------</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="TempConv.js"></script>
+    </body>
+</html>

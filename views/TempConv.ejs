@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Guillaume FAVROT">
+        <meta name="Description" content="Coding projects release and testing platform">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GTHProject</title>
+        <link rel="shortcut icon" href="/public/assets/img/viking_PNG44.png">
+        <link rel="stylesheet" href="/public/assets/Style.css">
+        <!--Ajouter l'argument defer permet de charger le script depuis le head-->
+        <script src="/public/assets/scripts/TempConv.js" defer></script>
+        
+    </head>
+    <body>
+        <!--Contient tout le site-->
+        <div class="containerpage">
+
+            <!--Contient le menu et la page principale-->
+            <div class="containersite">
+
+                <!--Contient le menu-->
+                <div class="containermenu">
+                    <div class="containerlogo">
+                        <img src="/public/assets/img/viking_PNG44.png">
+                    </div>
+                    <div class="menu">
+                        <b class="linkmenu"><a class="home" href="/">Home</a></b>
+                        <b class="linkmenu"><a class="page" href="TempConv">Temperature converter</a></b>
+                        <b class="linkmenu"><a class="page" href="Calculator">Calculator</a></b>
+                        <b class="linkmenu"><a class="page" href="Snake">Snake game</a></b>
+                        <b class="linkmenu"><a class="page" href="Pong">Pong game</a></b>
+                    </div>
+                </div>
+            
+                <!--Contient la page principale-->     
+                <div class="containermain">
+                    <!--Contient le header-->
+                    <div class="containerheader">
+                        <h1 id="top">GTH Project</h1>
+                        <p class="separator"><b>----------------------------------</b></p>
+                        <!--Ne pas confondre la balise Strong et la balise b. b met en gras et strong signale un élément important. Le rendu est le même mais les utilités sont différentes-->
+                        <p class="subtitle"><b>Welcome on GTHProject!</b></p>
+                        <p><b>This blog has been created as a release and testing environment for my various projects created during my coding learning journey.</b></p>
+                        <p class="separator last"><b>----------------------------------</b></p>
+                    </div>
+
+                    <!--Contient la partie article-->
+                    <div class="containerarticle">
+                            <h2>Temperature Converter</h2>
+                            <p class="tempconvpres"><b>Insert a temperature in Celcius, Fahrenheit or Kelvin in the corresponding field and get the converted values instantly!</b></p><br>
+                                <div class="fieldsConv">
+                                    <h3 class="tempconvpres"><b><u>Input(in °):</u></b></h3>
+                                    
+                                    <div class="grid-container">
+                                        <p class="temperatures"><b>Celcius :</b></p>
+                                        <p class="temperatures"><b>Fahrenheit :</b></p>
+                                        <p class="temperatures"><b>Kelvin :</b></p>
+                                    </div>
+            
+                                    <section>
+                                        <input type="number" name="Celcius" placeholder="Celcius" id="celciusValue" class="celciusInput inputs">
+                                        <input type="number" name="Fahrenheit" placeholder="Fahrenheit" id="fahrenheitValue" class="fahrenheitInput inputs">
+                                        <input type="number" name="Kelvin" placeholder="Kelvin" id="kelvinValue" class="kelvinInput inputs">
+                                    </section>
+                                    <h3 class="tempconvpres"><b><u>Output:</u></b></h3>
+                                    
+                                    <div class="grid-container2">
+                                        <p id="fahrenheitOutput1" class="output">Fahrenheit</p>
+                                        <p id="celciusOutput1" class="output output2">Celcius</p>
+                                        <p id="celciusOutput2" class="output">Celcius</p>
+                       
+                                        <p id="kelvinOutput1" class="output">Kelvin</p>
+                                        <p id="kelvinOutput2" class="output output2">Kelvin</p>
+                                        <p id="fahrenheitOutput2" class="output">Fahrenheit</p>
+                                    </div>
+                                </div>
+                    </div>
+
+
+                    <!--Contient le footer-->
+                    <div class="containerfooter">    
+                        <p class="separator"><b>----------------------------------</b></p>
+                        <p><b><u>Contact information :</u></b></p><br>
+                        <p><b>If you need to contact me using feel free to use the link below :</b></p>
+                        <address>
+                            <a href="mailto:willy2.favrot@gmail.com"><b>Click here</b></a>
+                        </address>
+                        <p class="separator"><b>----------------------------------</b></p>
+                        <a href="#top"><i><b>Back to the top</b></i></a>            
+                        <p class="separator"><b>----------------------------------</b></p>
+                        <date class="date" datetime="2021-05-10"><b>Last updated on May 10, 2021</b></date>
+                        <p class="separator last"><b>----------------------------------</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

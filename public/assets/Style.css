@@ -1,0 +1,521 @@
+* {
+    font-family: Calibri;
+    padding: 0px;
+    margin: 0px;     
+}
+body {
+    background-image: linear-gradient(135deg, rgb(24, 44, 68), rgb(71, 78, 87), rgb(24, 44, 68));
+    
+    font-size: 17px;
+    color: rgb(27, 27, 27);
+
+}
+
+.containerpage {
+    display: flex; /*Permet de définir un container comme un élément flex*/
+    flex-direction: column; /*La propriété flex-direction définit la façon dont les éléments flexibles sont placés dans un conteneur flexible : elle définit l'axe principal et la direction des éléments (normale ou inversée).*/
+    flex-wrap: nowrap; /*La propriété flex-wrap indique si les éléments flexibles sont contraints à être disposés sur une seule ligne ou s'ils peuvent être affichés sur plusieurs lignes avec un retour automatique. Si le retour à la ligne est autorisé, la propriété permet également de contrôler la direction dans laquelle les lignes sont empilées.*/
+    justify-content: flex-start; /*La propriété CSS justify-content indique la façon dont l'espace doit être réparti entre et autour des éléments selon l'axe principal d'un conteneur flexible ou selon l'axe en ligne lorsque le conteneur est une grille.*/ 
+    justify-items: stretch; /*La propriété CSS justify-items définit la valeur par défaut de justify-self pour tous les éléments d'une boîte et permet ainsi de définir le comportement par défaut pour la justification des éléments d'une boîte le long de l'axe en ligne (c'est-à-dire l'axe correspondant au sens d'écriture).*/
+    align-content: center; /**/
+    align-items: center; /**/
+    /*En résumé: content = disposition des éléments (comment sont disposés les éléments) // items = comportement des éléments (les éléments s'étirrent-ils sur toute la longueur du container?) 
+                 Justify = sur l'axe principal // Align = sur l'Axe secondaire 
+                 justify-content: flex-start, flex-end, center, space-around, space-between, space-evenly
+                 justify-items: stretch, center, flex-start, flex-end 
+                 Align-content :flex-start, flex-end, center, space-around, space-between
+                 Align-items : stretch, center, flex-start, flex-end
+                 */
+               
+}
+.containersite {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 1000px;
+    justify-content:space-between;
+    justify-items: stretch; /*Ne sert à rien car les éléments (menu et page ont une taille fixe (19% et 80% du containersite)*/
+    align-content: flex-start;
+    align-items: stretch;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+ 
+.containermenu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content:flex-start;
+    justify-items: center;
+    align-content: center;
+    align-items: stretch;
+    width: 19.35%;
+    border-radius: 3px;
+    background-color: rgb(27, 27, 27);
+}
+
+.containerlogo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content:center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 3px;
+}
+
+img {
+    height: 181px;
+    width: 181px;
+    border:white solid 3px;
+    background-image: linear-gradient(135deg, rgb(24, 44, 68), rgb(71, 78, 87));
+    border-radius: 3px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content:flex-end;
+    justify-items: flex-end;
+    align-content: center;
+    align-items: stretch;
+}
+
+.linkmenu {
+    text-align: center;
+    background-image: linear-gradient(135deg, rgb(24, 44, 68), rgb(71, 78, 87));
+    top: 160px;
+    padding: 5px;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 3px;
+    border: white solid 3px;
+}
+
+.linkmenu a {
+    color :rgb(255, 255, 255);
+    text-decoration: none;       
+}
+
+.linkmenu a.home {
+    font-size: 25px;
+}
+
+.containermain {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 80%;
+    justify-content: space-between;
+    justify-items: flex-start;
+    align-content: center;
+    align-items: stretch;
+}
+
+.containerheader {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    align-content: center;
+    align-items: stretch;
+    background-image: url('img/MountainUp2.jpg');
+    background-size: cover;
+    border: solid 3px rgb(27, 27, 27);
+    border-radius: 3px;
+    filter: contrast(100%) saturate(100%) brightness(100%);
+}
+
+.containerheader h1 {
+    color: rgb(27, 27, 27);
+    font-size: 45px;
+    padding-top: 10px;
+    text-align: center;
+    margin:10px;
+    }
+
+.subtitle {
+    color: rgb(27, 27, 27);
+    font-size: 25px;
+    text-align: center;
+    margin: 10px;
+}
+
+.containerheader p {
+    color: rgb(27, 27, 27);
+    text-align: center;
+    padding: 0px;
+}
+
+.containerarticle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-items: stretch;
+    align-content: center;
+    align-items: center;
+    background-image: linear-gradient(135deg,rgb(201, 224, 250), white);
+    border: solid 3px rgb(27, 27, 27);
+    border-radius: 3px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    filter: contrast(100%) saturate(100%) brightness(100%);
+}
+
+.containerarticle h2 {
+    text-align: center;
+    font-size: 35px;
+    color: rgb(27, 27, 27);
+    margin: 10px;
+}
+
+.containerarticle h3 {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 25px;
+    color: rgb(27, 27, 27);
+}
+
+.containerarticle p {
+    padding: 5px;
+    color: rgb(27, 27, 27);
+}
+
+.containerfooter {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url('img/MountainDown.jpg');
+    background-size: cover;
+    text-align: center;
+    border: solid 3px rgb(27, 27, 27);
+    border-radius: 3px;
+    filter: contrast(100%) saturate(100%) brightness(100%);
+}
+
+.containerfooter p {
+    color: rgb(27, 27, 27);
+}
+
+.date {
+    color: rgb(27, 27, 27);
+}
+
+.separator.last {
+    padding-bottom : 10px;
+}
+
+/* toutes lignes ci dessous concernent uniquement la page Temperature Converter.*/
+.fieldsConv {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-items: stretch;
+        align-content: center;
+        align-items: center;
+        color: rgb(27, 27, 27);
+        border: solid 3px rgb(27, 27, 27);
+        border-radius: 3px;
+        margin-bottom: 20px;
+        width: 98%;
+        position: relative;
+        background-image: url('img/istockphoto-615629456-612x612.jpg');
+        background-size: cover;
+    }
+
+    .tempconvpres {
+    text-align: center;
+    }
+
+.inputs {
+    text-align: center;
+    display: inline;
+    width: 200px;
+    height: 25px;
+    padding: 15px;
+    margin: 10px;
+    font-size: 25px;
+    border-radius: 3px;
+    background-color: rgb(85, 170, 226);
+    border: solid 3px rgb(27, 27, 27);
+}
+.grid-container2{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    
+}
+
+.grid-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.temperatures {
+    font-size: 23px;
+
+}
+
+.output {
+    text-align: center;
+    display: inline;
+    width: 220px;
+    height: 35px;
+    padding: 15px;
+    margin: 10px;
+    font-size: 25px;
+    border-radius: 3px;
+    background-color: rgb(85, 170, 226);
+    border: solid 3px rgb(27, 27, 27);
+}
+
+.output2{
+    margin-left: 16px;
+    margin-right: 16px;
+
+}
+
+/* toutes lignes ci dessous concernent uniquement la page Calculator.*/
+
+.fieldsCalc {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: stretch;
+    align-content: center;
+    align-items: center;
+    color: rgb(27, 27, 27);
+    border: solid 3px rgb(27, 27, 27);
+    border-radius: 3px;
+    margin-bottom: 20px;
+    width: 40%;
+    position: relative;
+    background-image: url('img/istockphoto-615629456-612x612.jpg');
+    background-size: cover;
+}
+
+.grid-containerCalc{
+    display: grid;
+    width: 100%;
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.result {
+    display: grid;
+    grid-template: 40% 60% / 95% 5%;
+    width: 94%;
+    height: 60px;
+    padding: 0px;
+    margin: 10px;
+    font-size: 25px;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    border: solid 3px rgb(27, 27, 27);
+}
+
+.current {
+    background-color: black;
+    color: white;
+    text-align: right;
+    padding: 5px;
+    grid-column: span 2;
+}
+
+.previous {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    text-align: right;
+    padding-bottom: 4px;
+    padding-right: 3px;
+}
+
+.operator {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+
+.calcButton{
+    /*L'argument cursor: pointer permet de remplacer la souris par un pointeur lorsqu'elle passe sur les boutons*/
+    cursor: pointer;
+    margin-bottom: 13px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    /*width: 100px;*/
+}
+
+.leftRow{
+    margin-left: 13px;
+}
+
+.middleRow1{
+    margin-left: 13px;
+}
+
+.middleRow2{
+    margin-left: 13px;
+}
+
+.rightRow{
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+.number{
+    background-color: rgb(184, 184, 184);
+}
+
+.punctuation{
+    background-color: rgb(151, 206, 243);
+}
+
+.operation{
+    background-color: rgb(85, 170, 226);
+}
+
+#equal{
+    background-color: rgb(17, 103, 160);
+    grid-column: span 2;
+}
+
+#ce{
+    background-color: rgb(187, 83, 14);
+    grid-column: span 2;
+}
+
+#suppr{
+    background-color: rgb(160, 33, 33);
+}
+
+/* toutes lignes ci dessous concernent uniquement la page Snake game.*/
+
+#containerSnake{
+    display: grid;
+    grid-template-columns: 1fr 0.45fr ;
+    
+}
+
+#containerHiscore{
+    border: 10px solid rgb(27, 27, 27);
+    border-radius: 0px 3px 3px 0px;
+    padding: 3px;
+    margin-left: -10px;
+    background-image: linear-gradient(135deg, rgb(24, 44, 68), rgb(71, 78, 87));
+    text-align: center;
+}
+
+.hiscore{
+    margin-left: 24px;
+    margin-top: 5px;
+}
+
+#hiscoreHeading{
+    border: 3px solid rgb(27, 27, 27);
+    border-radius: 3px ;
+    padding: 3px;
+    margin: auto;
+    background-color: rgb(47, 91, 209);
+    color: antiquewhite;
+}
+
+.containerCanvasSnake{
+    background-image: url('img/aerial-top-view-forest_35024-263.jpg');
+    background-size: cover;
+    height: 530px;
+    width: 530px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 0px 0px 3px 3px;
+}
+
+
+.canvasSnake{
+    display: flex;
+}
+
+#snakeCanvas{
+    background-color: rgba(49, 49, 49, 0.253);
+    height: 510px;
+    width: 510px;
+    border: 10px solid rgb(27, 27, 27);
+    border-radius: 3px;
+}
+
+#settingsMenu{
+    display : grid;
+    grid-template-columns: 1.3fr 0.8fr 1.5fr;
+    width: 504px;
+    border: 10px solid rgb(27, 27, 27);
+    border-radius: 3px 3px 0px 0px;
+    padding: 3px;
+    margin-bottom: -10px;
+    background-image: linear-gradient(135deg, rgb(24, 44, 68), rgb(71, 78, 87));
+
+}
+
+#currentLevel{
+    border: 3px solid rgb(27, 27, 27);
+    border-radius: 3px;
+    margin-left: 6px;
+    background-color: rgb(47, 91, 209);
+    color: antiquewhite;
+    text-align: center;
+    font-weight: bold;
+}
+
+#difficulty{
+    background-color: rgb(47, 91, 209);
+    border: 3px solid rgb(27, 27, 27);
+    border-radius: 3px;
+    text-align: center;
+    color: antiquewhite;
+}
+
+#selectDifficulty{
+    color: antiquewhite;
+}
+
+.hiscore{
+    text-align: center;
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+/* Le code ci-après concerne le jeu pong */
+
+.containerCanvasPong{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 0px 0px 3px 3px;
+}
+
+#pongCanvas{
+    background-color: rgb(0, 0, 0);
+    height: 450px;
+    width: 710px;
+    border: 10px solid rgb(27, 27, 27);
+    border-radius: 3px;
+}
